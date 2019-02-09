@@ -1,7 +1,7 @@
 function git_version
     set dry false
-    set build 
-    set type
+    set build ''
+    set type ''
     set force false
     getopts $argv | while read -l key value
         switch $key
@@ -17,7 +17,6 @@ function git_version
             case d dry
                 set dry true
             case f force
-                echo force
                 set force true
             case v version
                 _gitt_print_version
@@ -46,9 +45,8 @@ function git_version
         set vpatch 0
         set vminor 0        
     else
-        echo "Help"
-        echo "Accepts 'major', 'minor', or 'patch' as the first command line argument"
-        
+        echo $v
+
         return 0
     end
 
