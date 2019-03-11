@@ -7,6 +7,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [unreleased]
 
+## [1.3.0] 2019-03-11
+### Added
+  - `git untracked` to list untracked files
+### Changed
+  - `git ignore` now allows to .gitignore to be in a subdirectory
+  - `git ignore` now does an exact match to determine if a file/directory is already ignored
+
 ## [1.2.1] 2019-03-10
 ### Changed
   - `git ignore` only adds a line if it doesn't already exist
@@ -29,7 +36,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Added
 - Working
 
-[unreleased]: https://github.com/eidsonator/fish-git/compare/1.2.1...master
+[unreleased]: https://github.com/eidsonator/fish-git/compare/1.3.0...master
+[1.3.0]: https://github.com/eidsonator/fish-git/compare/1.2.1...1.3.0
 [1.2.1]: https://github.com/eidsonator/fish-git/compare/1.2.0...1.2.1
 [1.2.0]: https://github.com/eidsonator/fish-git/compare/1.1.1...1.2.0
 [1.1.1]: https://github.com/eidsonator/fish-git/compare/1.1.0...1.1.1
