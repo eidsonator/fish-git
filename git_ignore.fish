@@ -7,7 +7,7 @@ function git_ignore
         switch $key
             case _
                 if [ $value != ignore ]
-                    set exists (cat .gitignore | grep -c $value)
+                    set exists (cat .gitignore | grep -c "^$value\$")
                     if [ $exists != 0 ]
                         echo "$value already ignored"
                     else
