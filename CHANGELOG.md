@@ -7,6 +7,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [unreleased]
 
+## [1.2.1] 2019-03-10
+### Changed
+  - `git ignore` only adds a line if it doesn't already exist
+
 ## [1.2.0] 2019-03-08
 ### Added
   - `git ignore` command to update .gitignore file
@@ -25,7 +29,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Added
 - Working
 
-[unreleased]: https://github.com/eidsonator/fish-git/compare/1.2.0...master
+[unreleased]: https://github.com/eidsonator/fish-git/compare/1.2.1...master
+[1.2.1]: https://github.com/eidsonator/fish-git/compare/1.2.0...1.2.1
 [1.2.0]: https://github.com/eidsonator/fish-git/compare/1.1.1...1.2.0
 [1.1.1]: https://github.com/eidsonator/fish-git/compare/1.1.0...1.1.1
 [1.1.0]: https://github.com/eidsonator/fish-git/compare/1.0.0...1.1.0
