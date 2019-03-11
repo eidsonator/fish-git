@@ -1,11 +1,14 @@
 function git
 
     if count $argv > /dev/null
-        if [ $argv[1] = 'version' ]
-            git_version $argv
-        else if [ $argv[1] = 'ignore' ]
+        switch $argv[1]
+        case ignore
             git_ignore $argv
-        else 
+        case untracked
+            git_untracked $argv
+        case version
+            git_version $argv
+        case \*
             command git $argv
             return $status
         end    
