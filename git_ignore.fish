@@ -1,5 +1,5 @@
 function git_ignore
-    if not test -d .git
+    if not git_is_repo
         echo "No git repo found"
         return 1
     end
