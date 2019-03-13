@@ -26,6 +26,27 @@ Creates a .gitignore file if one doesn't exist
 git ignore node_modules/
 ```
 
+## git untracked
 
+Shows all untracked files
 
+```bash
+git untracked
+```
+
+## git staged
+
+Shows all staged files
+
+```bash
+git staged
+```
+
+## git changed
+
+Shows all edited files - does not show removed or untracked files
+
+```bash
+git changed
+```
 
