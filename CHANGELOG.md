@@ -7,6 +7,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [unreleased]
 
+## [1.4.0] 2019-03-12
+### Added
+  - `git changed` to show all changed files
+  - `git staged` to show all staged files
+## Changed
+  - `git version` now creates an annotated tag
+
 ## [1.3.0] 2019-03-11
 ### Added
   - `git untracked` to list untracked files
