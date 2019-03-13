@@ -3,6 +3,7 @@ function git_version
     set build ''
     set type ''
     set force false
+    set message ''
     getopts $argv | while read -l key value
         switch $key
             case _
@@ -18,9 +19,8 @@ function git_version
                 set dry true
             case f force
                 set force true
-            case v version
-                _git_print_version
-                return 0
+            case m message
+                set message $value
             case \*
                 echo unknown flag $key
 
@@ -80,7 +80,11 @@ function git_version
                 return 1
             end
         end
-        git tag $tag
+        if [ $message ]
+            git tag -a $tag -m $message
+        else 
+            git tag -a $tag 
+        end
         git push origin master --tags
     end
 end
