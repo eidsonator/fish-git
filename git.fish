@@ -2,6 +2,8 @@ function git
 
     if count $argv > /dev/null
         switch $argv[1]
+        case changed
+            git_changed
         case ignore
             git_ignore  $argv
         case staged
